@@ -1,0 +1,9 @@
+♣app.use() is will run everytime is does find a route which is being called upon.
+♣we cannot have http request that have more than one response.
+♣app.get("*")//generis route tirggered when when no matching routes are coded
+♣app.get("/r/:post/:id",(req,res)=>req.params.post)//generic routing
+♣query string//req.query is a object which contains the key and value pair passed in the url as a search query
+♣NO need to require the ejs package it will automatically be acquired by app.set('view engine','ejs')
+♣Express will assume that our templates are in directory view so we need to create a views directory to render ejs files.
+♣The views directory is fetched from the current directory i.e process.cwd() + /views
+♣The basic idea we need to tell Express to use one or more of these built-In parsing middlewares to parse the payload of incoming requests and then we can access the information in req.body in any of our route handler callbacks.
